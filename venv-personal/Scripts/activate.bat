@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\carol\desarrollo-personal\tu-nombre-apellido-bootcamp\mi-primera-api-fastapi\venv-personal
+set VIRTUAL_ENV=C:\Users\carol\desarrollo-personal\Fernanda_Betancourt-bootcamp\mi-primera-api-fastapi\venv-personal
 
 if not defined PROMPT set PROMPT=$P$G
 

@@ -35,7 +35,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\carol\desarrollo-personal\tu-nombre-apellido-bootcamp\mi-primera-api-fastapi\venv-personal"
+VIRTUAL_ENV="C:\Users\carol\desarrollo-personal\Fernanda_Betancourt-bootcamp\mi-primera-api-fastapi\venv-personal"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

@@ -1,7 +1,8 @@
-[200~#!/usr/bin/env python3
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
 Mi Primera API FastAPI - Verificaci√≥n de Setup
-Desarrollador: [Tu nombre se llenar√° autom√°ticamente]
+Desarrollador: [Fernanda Betancourt]
 """
 
 from fastapi import FastAPI
@@ -47,9 +48,21 @@ def health_check():
         "environment": "development"
     }
 
-if __name__ == "__main__":
-    import uvicorn
-    print("Ì∫Ä Iniciando servidor de verificaci√≥n...")
-    print("Ì≥ç Acceder a: http://localhost:8000")
-    print("Ì≥ñ Documentaci√≥n: http://localhost:8000/docs")
-cd Fernanda_Betancourt-bootcamp
+@app.get("/info")
+def info():
+    return {"api": "FastAPI", "week": 1, "status": "running"}
+
+@app.get("/greeting")
+@app.get("/greeting/{name}")
+def greet_user(name: str = "Fernanda"):
+    return {"greeting": f"¬°Hola {name}!"}
+
+@app.get("/my-profile")
+def my_profile():
+    return {
+        "name": "Fernanda",           # Cambiar por tu nombre
+        "bootcamp": "FastAPI",
+        "week": 1,
+        "date": "2025",
+        "likes_fastapi": True         # ¬øTe gust√≥ FastAPI?
+    }
